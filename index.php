@@ -23,7 +23,7 @@
     echo $cleardb_password . "</br>";
     echo $cleardb_db;
     */
-?>php
+?>
 
 <div id="content">
     <h1>Insert event info</h1>

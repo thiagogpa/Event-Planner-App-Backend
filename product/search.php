@@ -29,7 +29,10 @@ $num = $stmt->rowCount();
 // check if more than 0 record found
 if($num>0){
 
-    $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+    //$protocol = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')  ? "https://" : "http://";
+
+    $protocol = "https://";
+    
     $url = $protocol . $_SERVER['HTTP_HOST'];
     $drawablesFolder = '/drawables/';
 
